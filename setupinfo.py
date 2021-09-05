@@ -265,8 +265,6 @@ def print_libxml_error():
 
 def libraries():
     standard_libs = []
-    if 'linux' in sys.platform:
-        standard_libs.append('rt')
     if not OPTION_BUILD_LIBXML2XSLT:
         standard_libs.append('z')
     standard_libs.append('m')
